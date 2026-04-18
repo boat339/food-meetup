@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        max-width: 600px; /*页面宽度限制，不要太宽*/
+        margin: 60px auto; /*自动左右居中*/
+        padding: 0 25px; /*左右留点边距，不贴屏幕边缘*/
+    }
+    body {
+        background-color: #fff8f0;
+    }
+    h1,h2 {
+        color: #e65100;
+        text-align: center; /*标题居中*/
+    }
+    input,select,textarea {
+        width: 100%; /*宽度铺满页面*/
+        padding: 14px; /*内部留白，不挤*/
+        border: 1px solid #ffccaa; /*浅橘边框*/
+        border-radius: 12px; /*圆角！变好看的关键*/
+        margin-bottom: 18px; /*每个框下面留距离，不挤一起*/
+    }
+    button {
+        width:100%;
+        padding:15px;
+        background:#ff7043; /*美食橙色*/
+        color:white; /*文字白色*/
+        border:none; /*去掉默认灰色边框*/
+        border-radius:12px; /*圆角*/
+    }
+    /*鼠标放上去按钮变色*/
+    button:hover {
+        background:#e64a19;
+    }
+    body {
+        font-family: "Microsoft YaHei", sans-serif;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Recommendation.</title>
+</head>
+<body>
+<h2>是否有心仪的餐厅？</h2>
+
+<p>粘贴餐厅链接：</p>
+<textarea rows="3" placeholder="把链接复制粘贴到这里..."></textarea>
+
+<h3>投而票之：</h3>
+<div class="vote-box">
+    <button onclick="vote('想吃')">✅ 想吃</button>
+    <button onclick="vote('不吃')">❌ 不吃</button>
+    <button onclick="vote('随便')=">😐 随便</button>
+</div>
+
+<p>当前投票结果：</p>
+<p id="result">还没有人投票😥</p>
+
+<br>
+<a href="second.html">← 回上一页点我</a>
+
+</body>
+</html>
