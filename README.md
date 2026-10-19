@@ -4,9 +4,11 @@
 
 ## 开始使用
 
-下载仓库后，在项目根目录运行：
+需要 Git 和 Python 3，执行：
 
 ```bash
+git clone https://github.com/boat339/food-meetup.git
+cd food-meetup
 python -m http.server 8000
 ```
 
@@ -35,11 +37,13 @@ python -m http.server 8000
 
 安装 Node.js 22 后执行 `node scripts/check.mjs`。应用本身不依赖 Node.js，也无需安装 npm 包。
 
-## 命名与托管
+## 部署
 
-项目展示名为 **Foodie Meetup（美食搭子）**，建议仓库名为 `foodie-meetup`。本次代码整理未重命名 GitHub 仓库。
+项目使用相对路径，可部署到静态服务器或 GitHub Pages。GitHub Pages 可在仓库 Settings → Pages 中选择从 `main` 分支根目录发布，实际访问地址以设置页显示为准。
 
-当前仓库 `boat339.github.io` 是 GitHub Pages 用户站点的特殊命名。改成 `foodie-meetup` 后，应检查 Pages 设置与发布地址；项目站点常见地址为 `https://boat339.github.io/foodie-meetup/`，以 GitHub Pages 实际显示的地址为准。所有资源与子页面均使用相对路径。
+## 参与维护
+
+维护流程与验收记录见 [维护说明](docs/MAINTENANCE.md)，版本变化见 [变更记录](CHANGELOG.md)。修改后执行检查，再验证涉及的页面交互。
 
 ## 许可
 
