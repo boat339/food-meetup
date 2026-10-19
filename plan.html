@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="美食搭子：一起选择约饭日期、美食和餐厅。"
+    />
+    <title>约饭计划 · 美食搭子 Foodie Meetup</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/app.js" defer></script>
+  </head>
+  <body data-page="plan">
+    <header>
+      <a class="brand" href="index.html">🍊 美食搭子</a
+      ><span>Foodie Meetup</span>
+    </header>
+    <main>
+      <h1>今天想吃点什么？</h1>
+      <p id="today-date"></p>
+      <form id="plan-form">
+        <label for="meal-date">约饭日期</label>
+        <input id="meal-date" name="date" type="date" required />
+        <label for="food-type">想吃什么</label>
+        <select id="food-type" name="food">
+          <option>火锅</option>
+          <option>烤肉</option>
+          <option>小炒</option>
+          <option>西餐漂亮饭</option>
+          <option>小吃</option>
+          <option>海鲜</option>
+          <option>烧烤</option>
+          <option>其他</option>
+        </select>
+        <div id="other-food-group" hidden>
+          <label for="other-food">其他美食</label
+          ><input
+            id="other-food"
+            maxlength="100"
+            placeholder="输入你想吃的美食"
+          />
+        </div>
+        <button type="submit">选好了，看看餐厅 →</button>
+      </form>
+      <nav>
+        <a href="index.html">← 返回首页</a
+        ><a href="surprise.html">神秘小礼物 👀</a>
+      </nav>
+    </main>
+    <footer>美食搭子 · 一起把下一顿安排好</footer>
+  </body>
+</html>

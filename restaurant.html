@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="美食搭子：一起选择约饭日期、美食和餐厅。"
+    />
+    <title>餐厅与投票 · 美食搭子 Foodie Meetup</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/app.js" defer></script>
+  </head>
+  <body data-page="restaurant">
+    <header>
+      <a class="brand" href="index.html">🍊 美食搭子</a
+      ><span>Foodie Meetup</span>
+    </header>
+    <main>
+      <h1>有没有心仪的餐厅？</h1>
+      <p id="plan-summary"></p>
+      <label for="restaurant-url">餐厅链接（可选）</label>
+      <input id="restaurant-url" type="url" placeholder="https://…" />
+      <p class="hint">链接保存在当前标签页中，尚未提交给任何人。</p>
+      <h2>这一顿，你的态度是？</h2>
+      <div class="vote-box" role="group" aria-label="用餐意向">
+        <button type="button" data-vote="想吃" aria-pressed="false">
+          ✅ 想吃
+        </button>
+        <button type="button" data-vote="不吃" aria-pressed="false">
+          ❌ 不吃
+        </button>
+        <button type="button" data-vote="随便" aria-pressed="false">
+          😐 随便
+        </button>
+      </div>
+      <p id="vote-result" role="status">还没有选择😥</p>
+      <p class="hint">这是本地个人意向演示，不是多人实时投票。</p>
+      <nav>
+        <a href="plan.html">← 修改约饭计划</a><a href="index.html">返回首页</a>
+      </nav>
+    </main>
+    <footer>美食搭子 · 一起把下一顿安排好</footer>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  color-scheme: light;
+  font-family: 'Microsoft YaHei', system-ui, sans-serif;
+  color: #482b20;
+  background: #fff8f0;
+}
+body {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 0 24px;
+  line-height: 1.7;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+.brand {
+  font-weight: 700;
+  text-decoration: none;
+}
+header span,
+.hint,
+footer {
+  color: #795849;
+  font-size: 0.875rem;
+}
+main {
+  padding: 28px;
+  background: #fff;
+  border: 1px solid #ffdfc9;
+  border-radius: 20px;
+}
+h1,
+h2 {
+  color: #b83e08;
+  line-height: 1.4;
+}
+h1 {
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+h2 {
+  font-size: 1.2rem;
+}
+label {
+  display: block;
+  font-weight: 600;
+  margin: 18px 0 6px;
+}
+input,
+select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cf9f82;
+  border-radius: 10px;
+  font: inherit;
+  color: inherit;
+  background: #fff;
+}
+button,
+.button {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  margin-top: 20px;
+  background: #be420d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font: inherit;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+button:hover,
+.button:hover {
+  background: #963008;
+}
+a {
+  color: #a2380c;
+}
+:focus-visible {
+  outline: 3px solid #2067b1;
+  outline-offset: 3px;
+}
+.vote-box {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.vote-box button {
+  flex: 1 1 100px;
+}
+button[aria-pressed='true'] {
+  outline: 3px solid #482b20;
+  outline-offset: 3px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+footer {
+  text-align: center;
+  padding: 24px 0;
+}
+[hidden] {
+  display: none !important;
+}
+@media (max-width: 480px) {
+  body {
+    margin: 20px auto;
+    padding: 0 16px;
+  }
+  main {
+    padding: 20px;
+  }
+}
